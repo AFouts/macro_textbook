@@ -1,0 +1,2 @@
+unemp, USA, 2019: the data is wrong once compared with its source (ILOSTAT ). Reads 2 while it's 3.669.
+rgdpmad, USA: 2011-2020 -> The growth rates were retrospecively revised (2016-2017), I needed to change the the series for that period
