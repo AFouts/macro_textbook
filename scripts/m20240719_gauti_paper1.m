@@ -36,6 +36,9 @@ plot(dates, right_y_data3, '-', 'Color', [0.4940, 0.1840, 0.5560]); % Custom pur
 y_limits = ylim;
 max_y = y_limits(2); % Get the upper limit of the y-axis
 
+% Find the index of the fill start date
+fill_start_idx = find(dates >= fill_start_date, 1);
+
 % Fill the area above the curve of right_y_data2 past the fill_start_date
 if ~isempty(fill_start_idx)
     fill_dates = [dates(fill_start_idx:end); flip(dates(fill_start_idx:end))];
