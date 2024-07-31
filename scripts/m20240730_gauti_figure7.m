@@ -46,7 +46,7 @@ lgd.FontName = 'Times New Roman';
 % Customize the x-axis to display only years
 datetick('x', 'yyyy', 'keepticks'); % Format x-axis as years only
 ax.XAxis.TickLabelFormat = 'yyyy'; % Ensure the tick labels are formatted to show only year
-%xlabel('Year');                    % Label x-axis as 'Year'
+%xlabel('Time');                    % Label x-axis as 'Time'
 
 % Additional customization for better presentation
 grid on;                           % Ensure grid is on

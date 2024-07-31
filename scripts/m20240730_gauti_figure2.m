@@ -32,15 +32,13 @@ yyaxis right
 plot(dates, left_y_data, '-', 'Color', [0, 0, 1], 'LineWidth', 1.5); % Pure blue for the Google Trend Labor shortage data
 ylabel('Google Index', 'FontSize', 12, 'Interpreter', 'latex', 'Color', 'k'); % Adjust the label
 
-% Set the title
-%title('Monthly vacancies and unemployment for the USA, January 2008 - March 2024', 'FontSize', 14, 'Interpreter', 'latex'); % Adjust the title
-
 % Set the font size and style for the axes
 ax.FontSize = 12;
 ax.FontName = 'Times New Roman'; % Set the font to Times New Roman
 
 % Adjust the x-axis ticks
 ax.XTick = datetime(2008:2:2024, 1, 1);
+%xlabel('Time');                    % Label x-axis as 'Time'
 
 % Set the right y-axis graduations color to black
 ax.YAxis(2).Color = 'k';
@@ -48,8 +46,9 @@ ax.YAxis(2).Color = 'k';
 % Add legend
 legend_obj = legend({'Inflation (left y-axis)', 'Google Index (right y-axis)'}, 'Location', 'northwest', 'FontSize', 10, 'Interpreter', 'latex');
 
-% Remove legend box and set background to none
+% Remove legend box, specify font and set background to none
 set(legend_obj, 'Box', 'off');
+set(legend_obj, 'FontName', 'Times New Roman');
 set(legend_obj, 'Color', 'none');
 
 % Adjust legend position
